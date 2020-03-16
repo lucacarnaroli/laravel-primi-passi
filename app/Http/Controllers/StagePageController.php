@@ -1,3 +1,4 @@
+<!-- da terminale aggiungo un control con il comando 'php artisan make:controller NomeController '-->
 <?php
 
 namespace App\Http\Controllers;
@@ -8,7 +9,7 @@ class StagePageController extends Controller
 {
     public function album()
     {
-        $cd = [
+        $arrayCd = [
             [
                 'post' => 'https://images-na.ssl-images-amazon.com/images/I/51sBr4IWDwL.jpg',
                 'song' => 'New Jersey',
@@ -52,6 +53,7 @@ class StagePageController extends Controller
             ],
 
         ];
-        return view('cds', compact('cd'));
+        return view('views.index', compact('arrayCd'));
     }
 }
+// utilizzo composer perchè non utilizzo un altra var all'interno di arrayCd, al contrario non avrei utilizzato composer ma la var con il dollaro
