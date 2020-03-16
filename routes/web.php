@@ -10,7 +10,7 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/album', 'StaticPageController@album')->name('album');
+Route::get('/cds','StaticPageController@album')->name('album');
 
 Route::get('/', function () {
     return view('cds');

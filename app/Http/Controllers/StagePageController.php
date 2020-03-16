@@ -8,49 +8,50 @@ class StagePageController extends Controller
 {
     public function album()
     {
-        $cds = [
+        $cd = [
             [
                 'post' => 'https://images-na.ssl-images-amazon.com/images/I/51sBr4IWDwL.jpg',
                 'song' => 'New Jersey',
                 'artist' => 'Bon Jovi',
-                'year' => '1988',
+                'year' => 1988,
             ],
 
             [
                 'post' => 'https://images-na.ssl-images-amazon.com/images/I/71g40mlbinL._SX355_.jpg',
                 'song' => 'Live at Wembley 86',
                 'artist' => 'Queen',
-                'year' => '1992',
+                'year' => 1992,
             ],
 
             [
-                'post' =>  
-                'song' => 
-                'artist' =>
-                'year' =>
+                'post' => 'https://images-na.ssl-images-amazon.com/images/I/411BQR6BHRL.jpg',
+                'song' => 'Ten Summoner\'s Tales',
+                'artist' => 'Sting',
+                'year' => 1993,
             ],
 
             [
-                'post' =>  
-                'song' => 
-                'artist' =>
-                'year' =>
+                'post' => 'https://m.media-amazon.com/images/I/81UtLzBDoEL._SS500_.jpg',
+                'song' => 'Steve Gadd band',
+                'artist' => 'Steve Gadd band',
+                'year' => 2018,
             ],
 
             [
-                'post' =>  
-                'song' => 
-                'artist' =>
-                'year' =>
+                'post' => 'https://i.ebayimg.com/images/g/1GwAAOSwFytaKr7l/s-l300.jpg',
+                'song' => 'Brave new World',
+                'artist' => 'Iron Maiden',
+                'year' => 2000,
             ],
 
             [
-                'post' =>  
-                'song' => 
-                'artist' =>
-                'year' =>
+                'post' => 'https://images-na.ssl-images-amazon.com/images/I/81MDAIdh78L._SY355_.jpg',
+                'song' => 'One more car, one more rider',
+                'artist' => 'Eric Clapton',
+                'year' => 2002,
             ],
 
-        ]
+        ];
+        return view('cds', compact('cd'));
     }
 }
